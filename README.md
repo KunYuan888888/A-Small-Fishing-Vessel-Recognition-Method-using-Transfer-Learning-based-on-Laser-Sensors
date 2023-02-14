@@ -2,9 +2,9 @@
 This project is a novel method for recognizing small fishing vessels based on laser sensors. Using four types of small fishing vessels as targets, a recognition method for small fishing vessels based on Markov transition field (MTF) time-series images and VGG-16 transfer learning is proposed. 
 
 #Data preparation
-1. The original small fishing boat contour data is in the original data data folder.
-2. The MTF image obtained from fitting output is in the MTF Data file.
-3. The formal project training data is in Data.
+1. The original small fishing boat contour data is in the Original Data folder.
+2. The MTF image obtained from fitting output is in the MTF Data folder.
+3. The formal project training data is in Dataset.
 
 
 The following is the specific configuration information of the project:
@@ -16,7 +16,13 @@ This project uses TensorFlow2.0 for image classification tasks.
 + **Python 3.x** (My Python version is 3.6.8)<br/>
 + **TensorFlow version: 2.0.0-beta1**<br/> 
 + The file directory of the dataset should look like this: <br/>
-```
+
+### Data generation
+1.Run prepare_ . py file in the data folder. 
+The fitting data and encoded MTF image data are generated and saved in the Original Data folder and MTF Data folder.
+Finally, the MTF image data corresponding to the contour data of small fishing boats is obtained.
+2.Run the UCR.py file to download the complete UCR dataset and use the MTF method to encode the dataset data
+
 ${dataset_root}
 |——train
 |   |——class_name_0
