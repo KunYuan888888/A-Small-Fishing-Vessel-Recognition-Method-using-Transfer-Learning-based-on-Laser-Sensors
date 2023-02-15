@@ -28,7 +28,7 @@ This project uses TensorFlow2.0 for image classification tasks.
 2.Run MTF Encoding.py file in the data folder. 
 The fitting data and encoded MTF image data are generated and saved in the Original Data folder and MTF Data folder.
 
-3.The data set folder contains the enhanced fishing boat profile data, and the UCR migration learning model parameter is VGG-16 pre-training.h5 
+3.The data set folder contains the enhanced fishing boat profile data, and the UCR migration learning model parameter is VGG-16 pre-train.h5 
 
 
 ${dataset_root}
@@ -56,7 +56,7 @@ train.py
 to train the network on your image dataset, the final model will be stored. You can also change the corresponding training parameters in the `config.py`.<br/>
 
 ### 
-Transfer learning pre-training model is saved as VGG-16 pre-training.h5
+Transfer learning pre-training model is saved as VGG-16 pre-train.h5
 
 ### Evaluate
 To evaluate the model's performance on the test dataset, you can run `evaluate.py`.<br/>
