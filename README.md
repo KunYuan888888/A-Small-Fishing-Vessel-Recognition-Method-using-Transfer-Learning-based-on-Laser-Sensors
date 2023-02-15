@@ -7,7 +7,7 @@ The management of small vessels has always been key to maritime administration. 
 
 #Data preparation
 1. All. rar files in the project need to be decompressed. The compressed package name corresponds to the folder name.
-1. The original small fishing boat contour data and Concatenate the fitted data is in the Original Data folder.
+1. The original small fishing boat contour data and concatenate the fitted data is in the Original Data folder.
 3. The MTF image obtained from fitting output is in the MTF Data folder.
 4. The formal project training data is in Dataset.
 
