@@ -44,6 +44,6 @@ def get_datasets():
 
     train_num = train_generator.samples
     valid_num = valid_generator.samples
-    # test_num = test_generator.samples
+    test_num = test_generator.samples
 
     return train_generator, valid_generator, train_num, valid_num
