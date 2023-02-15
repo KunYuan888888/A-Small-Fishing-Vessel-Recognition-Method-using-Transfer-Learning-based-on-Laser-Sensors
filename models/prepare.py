@@ -3,7 +3,7 @@ import cv2
 
 
 
-path = 'D:\Litian_Code\FUSAR_Ship1'
+path = 'D:\Small Fishing Vessel Recognition\Dataset'
 
 
 class_list = os.listdir(path)
