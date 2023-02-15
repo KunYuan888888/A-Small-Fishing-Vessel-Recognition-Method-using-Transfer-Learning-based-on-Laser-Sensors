@@ -1,7 +1,7 @@
 import os
 import cv2
 
-tl_dir = "D:/Litian_Code/FUSAR_Ship6"
+tl_dir = "D:\Small Fishing Vessel Recognition\Dataset"
 class_list = os.listdir(tl_dir)
 for cls in class_list:
     cls_path = os.path.join(tl_dir, cls)
