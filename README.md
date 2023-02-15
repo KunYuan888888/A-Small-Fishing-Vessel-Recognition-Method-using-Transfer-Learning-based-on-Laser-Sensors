@@ -19,8 +19,10 @@ This project uses TensorFlow2.0 for image classification tasks.
 
 ### Data generation
 1.Run the UCR.py file to download the complete UCR dataset and use the MTF method to encode the  UCR MTF Data.
+
 2.Run MTF Encoding.py file in the data folder. 
 The fitting data and encoded MTF image data are generated and saved in the Original Data folder and MTF Data folder.
+
 3.The data set folder contains the enhanced fishing boat profile data, and the UCR migration learning model parameter is VGG-16 pre-training.h5 
 
 
