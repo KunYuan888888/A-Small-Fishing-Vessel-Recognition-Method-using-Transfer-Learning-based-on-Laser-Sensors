@@ -40,7 +40,7 @@ def extract(filepath, dest_dir):
 
 if __name__ == '__main__':
     FILE_URL = 'https://www.cs.ucr.edu/~eamonn/time_series_data_2018/UCR_TimeSeriesAnomalyDatasets2021.zip'
-    FILE_DIR = 'UCR MTF Data/'
+    FILE_DIR = 'UCR Data/'
 
     loaded_file_path = download_from_url(FILE_URL, FILE_DIR)
     extract(loaded_file_path)
