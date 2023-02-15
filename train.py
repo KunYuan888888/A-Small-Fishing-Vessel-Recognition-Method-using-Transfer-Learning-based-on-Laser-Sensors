@@ -1,11 +1,8 @@
 import tensorflow as tf
 from config import EPOCHS, BATCH_SIZE, model_dir
 from prepare_data import get_datasets
-from models.alexnet import AlexNet
 from models.vgg16 import VGG16
-from models.vgg19 import VGG19
 import matplotlib.pylab as plt
-from tensorflow.keras.applications.resnet50 import ResNet50
 from PIL import Image, ImageEnhance
 import numpy as np
 from tensorflow.keras.optimizers import Adam
