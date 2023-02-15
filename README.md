@@ -1,10 +1,14 @@
 # A-Small-Fishing-Vessel-Recognition-Method-
 This project is a novel method for recognizing small fishing vessels based on laser sensors. Using four types of small fishing vessels as targets, a recognition method for small fishing vessels based on Markov transition field (MTF) time-series images and VGG-16 transfer learning is proposed. 
 
+#Article Summary
+The management of small vessels has always been key to maritime administration. This paper presents a novel method for recognizing small fishing vessels based on laser sensors. Using four types of small fishing vessels as targets, a recognition method for small fishing vessels based on Markov transition field (MTF) time-series images and VGG-16 transfer learning is proposed. In contrast to conventional methods, this study uses polynomial fitting to obtain the contours of a fishing vessel and transforms one-dimensional vessel contours into two-dimensional time-series images using the MTF coding method. The VGG-16 model is used for the recognition process, and migration learning is applied to improve the results. The UCR time-series public dataset is used as a transfer learning dataset for the MTF time-series image encoding. The experiment demonstrates that the proposed method exhibits higher accuracy and performance than 1D-CNN and other general neural network models, and the highest accuracy rate is 98.92%.
+
 #Data preparation
+1. All. rar files in the project need to be decompressed. The compressed package name corresponds to the folder name.
 1. The original small fishing boat contour data is in the Original Data folder.
-2. The MTF image obtained from fitting output is in the MTF Data folder.
-3. The formal project training data is in Dataset.
+3. The MTF image obtained from fitting output is in the MTF Data folder.
+4. The formal project training data is in Dataset.
 
 
 The following is the specific configuration information of the project:
@@ -57,3 +61,5 @@ Transfer learning pre-training model is saved as VGG-16 pre-training.h5
 To evaluate the model's performance on the test dataset, you can run `evaluate.py`.<br/>
 
 The structure of the network is defined in `config。py` and `model_definition.py`, you can change the network structure to whatever you like.<br/>
+
+
