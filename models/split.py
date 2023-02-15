@@ -5,8 +5,8 @@ from matplotlib import pyplot as plt
 
 split_size = 0.8
 
-copytrain_path = 'D:\Litian_Code\FGSCR_{}split_train'.format(split_size)
-copytest_path = 'D:\Litian_Code\FGSCR_{}split_test'.format(split_size)
+copytrain_path = 'D:\Small Fishing Vessel Recognition\Dataset\train'.format(split_size)
+copytest_path = 'D:\Small Fishing Vessel Recognition\Dataset\test'.format(split_size)
 
 import random
 
@@ -31,7 +31,7 @@ if not os.path.exists(copytest_path):
     os.mkdir(copytest_path)
 
 ##
-path = 'D:\Litian_Code\FGSCR'
+path = 'D:\Small Fishing Vessel Recognition\Dataset'
 class_list = os.listdir(path)
 for cls in class_list:
     cls_path = os.path.join(path, cls)
