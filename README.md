@@ -29,6 +29,7 @@ This project uses TensorFlow2.0 for image classification tasks.
 The fitting data and encoded MTF image data are generated and saved in the Original Data folder and MTF Data folder.
 
 3.The data set folder contains the enhanced fishing boat profile data, and the UCR migration learning model parameter is VGG-16 pretrain.h5 
+Because the pre-training model is large, the download link address is given in the VGG-16 pre-training folder.
 
 
 ${dataset_root}
@@ -56,7 +57,7 @@ train.py
 to train the network on your image dataset, the final model will be stored. You can also change the corresponding training parameters in the `config.py`.<br/>
 
 ### 
-Transfer learning pre-training model is saved as VGG-16 pretrain.h5
+Transfer learning pre-training model is VGG-16 pretrain.h5，The download link is given in the VGG-16 pre-train folder.
 
 ### Evaluate
 To evaluate the model's performance on the test dataset, you can run `evaluate.py`.<br/>
