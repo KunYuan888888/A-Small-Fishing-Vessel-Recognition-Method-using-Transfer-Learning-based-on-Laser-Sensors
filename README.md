@@ -61,6 +61,6 @@ Transfer learning pre-training model is saved as VGG-16 pre-training.h5
 ### Evaluate
 To evaluate the model's performance on the test dataset, you can run `evaluate.py`.<br/>
 
-The structure of the network is defined in `config。py` and `model_definition.py`, you can change the network structure to whatever you like.<br/>
+The structure of the network is defined in `config.py` and `model_definition.py`, you can change the network structure to whatever you like.<br/>
 
 
