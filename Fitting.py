@@ -41,7 +41,7 @@ for i in range(1000):
     reader = csv.reader(open(y, 'rb'))
     l = len(reader)
     x= np.arange(1,l,1)
-    z1 = np.polyfit(x, y, 3)
+    z1 = np.polyfit(x, y, 3) #Polynomial fitting
     p1 = np.poly1d(z1)
 
     # print(p1)
