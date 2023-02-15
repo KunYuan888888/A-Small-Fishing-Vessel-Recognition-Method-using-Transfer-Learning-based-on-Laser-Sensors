@@ -5,25 +5,25 @@ import sys
 import os
 import urllib.request
 
-# 给定url下载文件
+# Download file given url
 def download_from_url(url, dir=''):
     _file_name = url.split('/')[-1]
     _file_path = os.path.join(dir, _file_name)
 
-    # 打印下载进度
+    #Print download progress
     def _progress(count, block_size, total_size):
         sys.stdout.write('\r>> Downloading %s %.1f%%' %
                          (_file_name, float(count * block_size) / float(total_size) * 100.0))
         sys.stdout.flush()
 
-    # 如果不存在dir，则创建文件夹
+    # If dir does not exist, create a folder
     if not os.path.exists(dir):
         print("Dir is not exsit,Create it..")
         os.makedirs(dir)
 
     if not os.path.exists(_file_path):
         print("Start downloading..")
-        # 开始下载文件
+        #Start downloading files
         import urllib
         urllib.request.urlretrieve(url, _file_path, _progress)
     else:
@@ -31,7 +31,7 @@ def download_from_url(url, dir=''):
 
     return _file_path
 
-# 使用tarfile解压缩
+# Use tarfile to decompress
 def extract(filepath, dest_dir):
     if os.path.exists(filepath) and not os.path.exists(dest_dir):
         import tarfile
