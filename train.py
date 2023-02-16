@@ -11,7 +11,7 @@ import sys
 
 def get_model():
     
-    model = VGG16 ( weights=None, classes=4 )  # 训练模型input_shape, num_classes,
+    model = VGG16 ( weights=None, classes=4 )  # train model input_shape, num_classes,
     model.compile ( loss='categorical_crossentropy',
                     optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
                     metrics=['accuracy'])
