@@ -1,8 +1,6 @@
 import os
 import cv2
 
-
-
 path = 'D:\Small Fishing Vessel Recognition\Dataset'
 
 
