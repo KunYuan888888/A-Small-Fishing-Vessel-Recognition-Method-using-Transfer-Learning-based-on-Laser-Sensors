@@ -14,12 +14,12 @@ for cls in class_list:
             # print(cropped.shape)
             # plt.imshow(cropped)  
             # plt.show()
-            cv2.imwrite(f'D:/Litian_Code/FUSAR_Ship6/{cls}/{data_name}', cropped)
+            cv2.imwrite(f'D:/Small Fishing Vessel Recognition/Dataset/{cls}/{data_name}', cropped)
     print(cls)
 
 
 """
-# FUSARship_0.5split_train 
+# 0.5split_train 
 tl_train_dir = "D:\Small Fishing Vessel Recognition\Dataset\\train"
 tl_valid_dir = "D:\Small Fishing Vessel Recognition\Dataset\\test"
 train_class_list = os.listdir(tl_train_dir)
@@ -48,7 +48,7 @@ for cls in valid_class_list:
         if img.shape[0] > 500 and img.shape[1] > 500:
             cropped = img[106:406, 106:406]
             # print(cropped.shape)
-            # plt.imshow(cropped)  #打印图片
+            # plt.imshow(cropped)  
             # plt.show()
             cv2.imwrite(f'D:\Small Fishing Vessel Recognition\Dataset\{data_name}', cropped)
         else:
