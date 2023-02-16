@@ -1,7 +1,6 @@
 import tensorflow as tf
 from config import *
 
-
 def VGG16():
     model = tf.keras.Sequential()
     # 1
