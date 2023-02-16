@@ -20,8 +20,8 @@ for cls in class_list:
 
 """
 # FUSARship_0.5split_train 
-tl_train_dir = "D:/Litian_Code/FUSARship4_0.5split_train"
-tl_valid_dir = "D:/Litian_Code/FUSARShip4_0.5split_test"
+tl_train_dir = "D:\Small Fishing Vessel Recognition\Dataset\\train"
+tl_valid_dir = "D:\Small Fishing Vessel Recognition\Dataset\\test"
 train_class_list = os.listdir(tl_train_dir)
 for cls in train_class_list:
     cls_path = os.path.join(tl_train_dir, cls)
